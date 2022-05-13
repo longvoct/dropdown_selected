@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+
+body {
+  font-family: "Inter";
+}
+.dropdown {
+  cursor: pointer;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  &-btn {
+    width: 450px;
+    height: 58px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+  }
+  &-icon {
+    padding: 20px;
+    transition: all 0.25s;
+    &__rotate {
+      transform: rotate(-180deg);
+      padding: 20px;
+    }
+  }
+  &-content {
+    margin-top: 5px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  &-item {
+    padding: 5px 15px;
+    width: 420px;
+    height: 55px;
+    &:first-child {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      padding: 10px 15px 5px 15px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding: 0px 15px;
+    }
+
+    div {
+      width: 420px;
+      height: 48px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 8px;
+      span {
+        padding-left: 12px;
+        font-size: 15px;
+      }
+    }
+    &:hover {
+      div {
+        background-color: rgb(#2490f9, 0.1);
+        color: #2490f9;
+      }
+    }
+  }
+}
